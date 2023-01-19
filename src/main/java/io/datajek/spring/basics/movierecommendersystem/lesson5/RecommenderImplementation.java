@@ -8,10 +8,6 @@ public class RecommenderImplementation {
     @Autowired
     private Filter contentBasedFilter;
 
-    public RecommenderImplementation(Filter contentBasedFilter){
-        super();
-        this.contentBasedFilter = contentBasedFilter;
-    }
 
     public String[] recommendMovies (String movie) {
         System.out.println("Name of the filter in use: " + contentBasedFilter + "\n");
